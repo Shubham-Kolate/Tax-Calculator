@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 600px;
+    margin: 150px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.form-group {
+    
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.error-icon {
+    display: none; 
+    position: relative;
+    cursor: pointer;
+    
+    top: -28px;
+    right: -530px;
+    width: 18px;
+    height: 18px;
+    background-color: #4b4b4b;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.error-icon::after {
+    content: "!";
+}
+.error-icon:hover {
+    
+    opacity: 5;
+}
+.error-icon:hover::after {
+    content: "Please enter numbers only";
+    position: absolute;
+    top: -30px;
+    right: -15px;
+    padding: 4px;
+    background-color: #4b4b4b;
+    color: #fff;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
+}
+.error-icon2 {
+    display: none; 
+    position: relative;
+    cursor: pointer;
+    top: -28px;
+    right: -530px;
+    width: 20px;
+    height: 20px;
+    background-color: #4b4b4b;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.error-icon2::after {
+    content: "!";
+}
+.error-icon2:hover {
+    
+    opacity: 1;
+}
+.error-icon2:hover::after {
+    content: "Input field is mandatory";
+    position: absolute;
+    top: -30px;
+    right: -5px;
+    padding: 5px;
+    background-color: #4b4b4b;
+    color: #fff;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
+}
+span{
+    font-weight: 100;
+    font-size: 15px;
+    
+}
+.question-mark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('assets/question-mark.png'); 
+    background-size: cover;
+    cursor: pointer;
+}
+.tooltip {
+    position: absolute;
+    z-index: 1;
+    background-color: #4b4b4b;
+    color: #fff;
+    margin: 0 ;
+    padding: 5px;
+    border-radius: 3px;
+    width: 190px;
+    display: none;
+    transform: translate(-8%, -130%);
+}
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+}
+
+
+.result-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    display: none;
+    
+}
+.card-content {
+    text-align: center;
+}
+#closeBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income Tax Calculator</h1>
+        <form id="taxForm">
+            <div class="form-group">
+                <label for="grossIncome">Enter gross annual income <span class="question-mark" data-message="Gross annual income is your total salary in a year before any deductions."></span></label>
+                <input id="grossIncome" name="grossIncome" placeholder="Enter gross annual income" required>
+                <div class="error-icon" id="grossIncomeError"></div>
+            </div>
+            <div class="form-group">
+                <label for="extraIncome">Enter extra income <span class="question-mark" data-message="Enter any additional income besides your gross annual income."></span></label>
+                <input id="extraIncome" name="extraIncome" placeholder="Enter extra income fromother sources">
+                <div class="error-icon" id="extraIncomeError"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Enter age group <span class="question-mark" data-message="Select your age group to calculate the appropriate tax rate."></span></label>
+                <select id="age" name="age">
+                    <option value="" disabled selected></option>
+                    <option value="<40">&lt;40</option>
+                    <option value=">=40&<60">&ge;40 &lt;60</option>
+                    <option value=">=60">&ge;60</option>
+                </select>
+                <div class="error-icon2" id="ageError"></div>
+            </div>
+            <div class="form-group">
+                <label for="deductions">Enter total applicable deductions  <span class="question-mark" data-message="Enter any deductions that you are eligible for, such as investments, insurance, etc."></span></label>
+                <input id="deductions" name="deductions" placeholder="Add total applicable deductions">
+                <div class="error-icon" id="deductionsError"></div>
+            </div>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+    
+    <div class="result-card" id="resultCard">
+        <div class="card-content" id="cardContent">
+            <h2>Tax Calculation Result</h2>
+            <p id="taxResult">Tax to be calculated...</p>
+            <button id="closeBtn">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

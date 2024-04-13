@@ -2,7 +2,7 @@
 I have designed a real time tax calculator with using HTML, CSS and Javascript.
 It is very easy to calculate the income tax and to know the real salary after all the tax deductions. 
 # How to use
-Simply oopen the index file in the browser and calculate the tax.
+Simply open the index file in the browser and calculate the tax.
 It will show you the accurate result.
 If you enter non numeric value then the tax calculator show the warning sign.
 Also you have to choose the age group because it is mandatory.
